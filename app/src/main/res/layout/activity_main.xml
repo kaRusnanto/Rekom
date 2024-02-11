@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:background="@drawable/onlyfrsearchview"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="Apa Yang Kamu Cari ??"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:drawableLeft="@drawable/search"
+        android:padding="8dp"
+        android:gravity="center"
+        android:fontFamily="@font/comicz"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginStart="22dp"
+        android:fontFamily="@font/comicz"
+        android:layout_marginTop="90dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:text="Latest Movies"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:orientation="horizontal">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
